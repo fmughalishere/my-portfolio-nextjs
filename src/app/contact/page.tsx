@@ -87,7 +87,7 @@ export default function ContactPage() {
                 </li>
                 <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                   <Phone className="w-5 h-5" />
-                  <span>+92 3284008871</span>
+                  <span>+92 3174084110</span>
                 </li>
                 <li className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                   <Linkedin className="w-5 h-5" />

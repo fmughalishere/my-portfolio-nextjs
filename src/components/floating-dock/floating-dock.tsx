@@ -38,7 +38,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandInstagramFilled className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://www.instagram.com/mern_dev_fiza/",
+      href: "https://www.instagram.com/mern_dev_fizza/",
     },
     {
       title: "Resume",

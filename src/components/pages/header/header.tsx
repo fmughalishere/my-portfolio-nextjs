@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import { Boxes } from "../../ui/background-boxes";
-// import { cn } from "@/lib/utils";
-import Image from "next/image"; // Import Next.js Image component
+import Image from "next/image"; 
 import { FloatingDockDemo } from "../../floating-dock/floating-dock";
 import ColourfulText from "../../ui/colourful-text";
 import MovingBorderButton from "@/components/button/moving-border-button";
@@ -12,26 +11,18 @@ import Link from "next/link";
 export function Header() {
     return (
         <div className="h-[700px] relative w-full overflow-hidden bg-slate-900 flex items-center justify-center">
-            {/* Background Overlay */}
             <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
-
-            {/* Background Animation */}
             <Boxes />
-
-            {/* Content Wrapper */}
             <div className="relative z-20 flex flex-col md:flex-row items-center w-full max-w-7xl gap-5 md:gap-0">
-                {/* Left Side - Image */}
                 <div className="md:w-[40%] w-[95%] flex justify-center items-center">
                     <Image
-                        src="/images/fizza's-circle.png" // Replace with your actual image path
+                        src="/images/fizza's-circle.jpeg"
                         alt="Fizza Munir"
                         width={300}
                         height={300}
                         className="rounded-full shadow-lg border-4 border-white"
                     />
                 </div>
-
-                {/* Right Side - Name & Info */}
                 <div className="md:w-[60%] w-[95%] flex flex-col justify-center items-start text-white">
                     <h1 className="text-2xl md:text-[50px]  font-bold text-center md:mb-5 text-slate-300">Transforming Concepts into <br /> </h1>
                     <h1 className="text-2xl md:text-[56px]  font-bold text-center md:mb-5 text-slate-300"><ColourfulText text="Seamless User Experiences." /></h1>

@@ -11,6 +11,26 @@
     },
     {
       "id": "2",
+      "img": "/images/etrends.jpg",
+      "name": "E-Trends Solutions",
+      "description": "Designed and developed a modern, responsive travel business website with AI-driven marketing and lead generation solutions.",
+      "technology": "Next.js, Tailwind CSS, Framer Motion, react-router-dom etc.",
+      "liveLink": "https://etrendssolutions.com/",
+      "client": "https://github.com/fmughalishere",
+      "server": "https://github.com/fmughalishere"
+    },
+    {
+      "id": "2",
+      "img": "/images/portfolio.jpg",
+      "name": "Professional Portfolios",
+      "description": "Designed and developed a modern, responsive personal portfolio website showcasing skills, projects, experience, and professional achievements with a clean, user-friendly interface.",
+      "technology": "Next.js, Tailwind CSS, Framer Motion etc.",
+      "liveLink": "usman-portfolio-olive.vercel.app",
+      "client": "https://github.com/fmughalishere",
+      "server": "https://github.com/fmughalishere"
+    },
+    {
+      "id": "3",
       "img": "/images/positivus.png",
       "name": "Positivus",
       "description": "Businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.",
@@ -21,7 +41,7 @@
     },
 
     {
-      "id": "3",
+      "id": "4",
       "img": "https://i.ibb.co/mRBQWNd/foodo.png",
       "name": "Foodo",
       "description": "Restaurant management system with secure user roles, ordering, and dashboards.",
