@@ -20,17 +20,17 @@
       "server": "https://github.com/fmughalishere"
     },
     {
-      "id": "2",
+      "id": "3",
       "img": "/images/portfolio.jpg",
       "name": "Professional Portfolios",
       "description": "Designed and developed a modern, responsive personal portfolio website showcasing skills, projects, experience, and professional achievements with a clean, user-friendly interface.",
       "technology": "Next.js, Tailwind CSS, Framer Motion etc.",
-      "liveLink": "usman-portfolio-olive.vercel.app",
+      "liveLink": "https://usman-ghanni-portfolio.vercel.app/",
       "client": "https://github.com/fmughalishere",
       "server": "https://github.com/fmughalishere"
     },
     {
-      "id": "3",
+      "id": "4",
       "img": "/images/positivus.png",
       "name": "Positivus",
       "description": "Businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.",
@@ -39,9 +39,29 @@
       "client": "https://github.com/fmughalishere",
       "server": "https://github.com/fmughalishere"
     },
+    {
+      "id": "5",
+      "img": "/images/big-way.png",
+      "name": "Big Way Umrah",
+      "description": "Developed a modern, responsive Umrah travel platform providing seamless pilgrimage services, booking management, and user-friendly journey guidance.",
+      "technology": "Next.js, Tailwind CSS, Framer Motion etc.",
+      "liveLink": "https://big-way-umrah.vercel.app/",
+      "client": "https://github.com/fmughalishere",
+      "server": "https://github.com/fmughalishere"
+    },
+    {
+      "id": "6",
+      "img": "/images/sikh-heritage.png",
+      "name": "Sikh Heritage",
+      "description": "Built a modern heritage website dedicated to preserving and presenting Sikh history, sacred sites, and cultural narratives in an accessible format.",
+      "technology": "Next.js, Tailwind CSS, Framer Motion etc.",
+      "liveLink": "https://sikh-heritage-global.vercel.app/",
+      "client": "https://github.com/fmughalishere",
+      "server": "https://github.com/fmughalishere"
+    },
 
     {
-      "id": "4",
+      "id": "7",
       "img": "https://i.ibb.co/mRBQWNd/foodo.png",
       "name": "Foodo",
       "description": "Restaurant management system with secure user roles, ordering, and dashboards.",
@@ -51,7 +71,7 @@
       "server": "https://github.com/fmughalishere"
     },
     {
-      "id": "4",
+      "id": "8",
       "img": "https://i.ibb.co/SVxDYZq/Recycle-Clothes.jpg",
       "name": "Recycle Clothes",
       "description": "Eco-friendly marketplace to sell and buy secondhand clothes securely.",
@@ -61,7 +81,7 @@
       "server": "https://github.com/fmughalishere"
     },
     {
-      "id": "5",
+      "id": "9",
       "img": "https://i.ibb.co/7jCryNg/Doctors-portal.jpg",
       "name": "Doctors Portal",
       "description": "Appointment booking platform for patients and doctors with role access.",
@@ -71,7 +91,7 @@
       "server": "https://github.com/fmughalishere"
     },
     {
-      "id": "6",
+      "id": "10",
       "img": "https://i.ibb.co/C7GGYty/Smile-Photography.jpg",
       "name": "Smile Photography",
       "description": "Photography service platform with bookings, reviews, and user dashboards.",
@@ -81,7 +101,7 @@
       "server": "https://github.com/fmughalishere"
     },
     {
-      "id": "7",
+      "id": "11",
       "img": "https://i.ibb.co/pbW5CZ6/course-hero.jpg",
       "name": "Course Hero",
       "description": "E-learning platform with course management and secure user enrollment.",
@@ -91,7 +111,7 @@
       "server": "https://github.com/fmughalishere"
     },
     {
-      "id": "8",
+      "id": "12",
       "img": "https://i.ibb.co/hfpjtLf/quick-quiz.jpg",
       "name": "Quick Quiz",
       "description": "A simple quiz platform built with React and Netlify hosting.",
@@ -100,7 +120,7 @@
       "client": "https://github.com/fmughalishere"
     },
     {
-      "id": "9",
+      "id": "13",
       "img": "https://i.ibb.co/PtxfyqB/ema-john.jpg",
       "name": "Ema-John E-commerce",
       "description": "Full-stack e-commerce site with product search, cart, and authentication.",
@@ -110,7 +130,7 @@
       "server": "https://github.com/fmughalishere"
     },
     {
-      "id": "10",
+      "id": "14",
       "img": "https://i.ibb.co/jbXQpgw/genius-car.jpg",
       "name": "Genius Car - Car Service Center",
       "description": "Car service booking and management site with admin dashboard.",
@@ -120,7 +140,7 @@
       "server": "https://github.com/fmughalishere"
     },
     {
-      "id": "11",
+      "id": "15",
       "img": "https://i.ibb.co/J3pLhWT/craft-hub-dp.png",
       "name": "Craft Hub",
       "description": "Craft marketplace with role-based dashboards for admin, seller, and buyers.",
@@ -130,7 +150,7 @@
       "server": "https://github.com/fmughalishere"
     },
     {
-      "id": "12",
+      "id": "16",
       "img": "https://i.ibb.co/1bq7Gqs/daily-activites.jpg",
       "name": "Daily Activities",
       "description": "Simple task planner to list and manage daily to-dos.",
