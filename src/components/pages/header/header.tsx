@@ -14,7 +14,7 @@ export function Header() {
             <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
             <Boxes />
             <div className="relative z-20 flex flex-col md:flex-row items-center w-full max-w-7xl gap-5 md:gap-0">
-                <div className="md:w-[40%] w-[95%] flex justify-center items-center mt-20 md:mt-0">
+                <div className="md:w-[40%] w-[95%] flex justify-center items-center mt-10 md:mt-0">
                     <Image
                         src="/images/fizza's-circle.jpeg"
                         alt="Fizza Munir"
