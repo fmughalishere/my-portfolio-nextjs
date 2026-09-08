@@ -7,7 +7,7 @@ export default function Preloader({ isFadingOut }: { isFadingOut: boolean }) {
       initial={{ opacity: 1 }}
       animate={{ opacity: isFadingOut ? 0 : 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="fixed inset-0 flex items-center justify-center bg-gray-900 text-white z-50 pointer-events-none"
+      className="fixed inset-0 flex items-center justify-center bg-neutral-900 text-white z-50 pointer-events-none"
     >
       <motion.div
         initial={{ scale: 1 }}

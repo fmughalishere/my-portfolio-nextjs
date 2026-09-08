@@ -58,9 +58,13 @@ export default function WhatIDo() {
     return (
         <section
             ref={ref}
-            className="py-12 bg-gray-50 dark:bg-gray-950 transition-colors duration-300"
+            className="relative py-12 bg-gray-50 dark:bg-neutral-950 transition-colors duration-300 overflow-hidden"
         >
-            <div className="container mx-auto px-6">
+            <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none hidden dark:block">
+                <div className="absolute top-0 left-1/3 w-72 h-72 bg-teal-500/10 rounded-full mix-blend-screen filter blur-3xl" />
+                <div className="absolute bottom-0 right-1/3 w-72 h-72 bg-teal-500/10 rounded-full mix-blend-screen filter blur-3xl" />
+            </div>
+            <div className="relative z-10 container mx-auto px-6">
                 <h1 className="text-3xl md:text-4xl font-bold text-center mb-5 text-gray-900 dark:text-gray-100">
                     What I Do
                 </h1>
@@ -76,8 +80,8 @@ export default function WhatIDo() {
                             animate={controls}
                             transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
                         >
-                            <CardSpotlight className="p-6 bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300">
-                                <div className="w-[20%] mx-auto flex justify-center items-center p-4 bg-gray-100 dark:bg-gray-800 rounded-full mb-4">
+                            <CardSpotlight className="p-6 bg-white dark:bg-white/5 dark:backdrop-blur-xl rounded-xl shadow-lg border border-gray-200 dark:border-white/10 transition-all duration-300">
+                                <div className="w-[20%] mx-auto flex justify-center items-center p-4 bg-gray-100 dark:bg-neutral-800 rounded-full mb-4">
                                     {service.icon}
                                 </div>
 

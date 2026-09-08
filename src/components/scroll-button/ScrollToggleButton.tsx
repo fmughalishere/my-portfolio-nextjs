@@ -38,7 +38,7 @@ export default function ScrollToggleButton() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-6 right-6 z-50 bg-blue-500 text-white p-3 rounded-full shadow-lg transition-all hover:bg-blue-600 flex items-center justify-center"
+          className="fixed bottom-6 right-6 z-50 bg-teal-500 text-black p-3 rounded-full shadow-lg transition-all hover:bg-teal-400 flex items-center justify-center"
         >
           <AnimatePresence mode="wait">
             {atBottom ? (

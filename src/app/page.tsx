@@ -11,6 +11,7 @@ import ShortExperience from "@/components/pages/short-experience/short-experienc
 import Skills from "@/components/pages/skills/skills";
 import ProjectSection from "@/components/pages/projects/projects";
 import ContactSection from "@/components/pages/contact/contact";
+import Stats from "@/components/pages/stats/stats";
 
 export default function Home() {
   // const [atBottom, setAtBottom] = useState(false);
@@ -32,11 +33,14 @@ export default function Home() {
   // };
 
   return (
-    <div className="dark:bg-gray-900 pb-20 relative">
+    <div className="dark:bg-neutral-900 pb-20 relative">
       {/* Header Section */}
       <Header />
       {/* About Section */}
       {/* <About/> */}
+
+      {/* Stats + Trusted By */}
+      <Stats />
 
       {/* what i do  */}
       <WhatIDo />
@@ -59,7 +63,7 @@ export default function Home() {
       <Footer />
       {/* <button
         onClick={() => scrollTo(atBottom ? "top" : "bottom")}
-        className="fixed bottom-6 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg transition-all hover:bg-blue-600 flex items-center justify-center"
+        className="fixed bottom-6 right-6 bg-teal-500 text-black p-3 rounded-full shadow-lg transition-all hover:bg-teal-400 flex items-center justify-center"
       >
         <AnimatePresence mode="wait">
           {atBottom ? (

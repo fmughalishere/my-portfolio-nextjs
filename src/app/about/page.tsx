@@ -18,7 +18,7 @@ export default function AboutPage() {
   return (
     <div>
       <About />
-      <section className="min-h-screen py-20 px-6 bg-white dark:bg-black transition-colors duration-300">
+      <section className="min-h-screen py-20 px-6 bg-white dark:bg-neutral-950 transition-colors duration-300">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -47,31 +47,32 @@ export default function AboutPage() {
             </h1>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
               Hey! I&apos;m{" "}
-              <span className="font-semibold text-blue-600 dark:text-blue-400">
+              <span className="font-semibold text-teal-600 dark:text-teal-400">
                 Fizza Munir
               </span>
-              , a passionate{" "}
-              <span className="font-semibold">MERN Stack Developer</span> and
-              freelance web developer focused on building modern, responsive,
-              and high-performance web applications.
+              , a Software Engineer and freelance{" "}
+              <span className="font-semibold">Full-Stack (MERN) &amp; Mobile App Developer</span>{" "}
+              with 3+ years of experience building modern, responsive,
+              high-performance web and mobile applications.
             </p>
 
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
-              I specialize in React, Next.js, Node.js, and MongoDB, and I love
-              turning ideas into real-world digital products. I also build clean
-              UI/UX designs that are user-friendly and conversion-focused.
+              I specialize in React, Next.js, Node.js, MongoDB, and Flutter, and
+              I love turning ideas into real-world digital products — I own the
+              full lifecycle: UI/UX design, development, testing, and analysis.
             </p>
 
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
-              As a freelancer, I work with clients worldwide to deliver scalable
-              websites, dashboards, and full-stack solutions. I am always
-              learning new technologies and improving my development skills.
+              As a freelancer, I&apos;ve delivered scalable websites, dashboards,
+              mobile apps, and full-stack solutions for clients across Pakistan,
+              the UAE, and the USA — always learning new technologies along the
+              way.
             </p>
 
             <div className="flex flex-wrap gap-4 mt-8">
               <Link
                 href="/projects"
-                className="border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white font-medium px-6 py-2 rounded-full transition"
+                className="border border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-black font-medium px-6 py-2 rounded-full transition"
               >
                 View My Projects
               </Link>
@@ -96,11 +97,14 @@ export default function AboutPage() {
               <FaGraduationCap /> Education
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              🎓 Bachelors of Science in Computer Science
+              🎓 Bachelor of Science in Computer Science
               <br />
-              📍 University of the Punjab, Lahore Pakistan
+              📍 University of the Punjab, Lahore, Pakistan
               <br />
               📅 Graduation: July 2025
+              <br />
+              📚 Planning to start a Master&apos;s degree to deepen my software
+              engineering &amp; AI expertise
             </p>
           </motion.div>
           <motion.div
@@ -133,9 +137,11 @@ export default function AboutPage() {
               <li>Node.js / Express</li>
               <li>MySQL / MongoDB</li>
               <li>Tailwind CSS / Framer Motion</li>
-              <li>REST APIs / Firebase / JWT </li>
-              <li>Wordpress</li>
-              <li>Flutter Development</li>
+              <li>REST APIs / Firebase / JWT</li>
+              <li>Flutter / Android / iOS</li>
+              <li>AI API Integration</li>
+              <li>UI/UX Design Basics</li>
+              <li>QA &amp; Testing</li>
             </ul>
           </motion.div>
           <motion.div
@@ -148,12 +154,12 @@ export default function AboutPage() {
               <FaBriefcase /> Experience
             </h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              💼 Frontend Developer @ Kreatorz.co
+              💼 Software Engineer (Android &amp; iOS) @ TLC Med Clinics — current
               <br />
-              And MERN Stack Developer @ Techxum.com
+              Previously: Etrends Solutions, Success Signatures &amp; Kreatorz.co
               <br />
-              🚀 Built scalable dashboards, APIs, and responsive UIs with React
-              & Node.js.
+              🚀 Built scalable dashboards, APIs, and responsive web &amp; mobile
+              UIs across 15+ real client projects.
             </p>
           </motion.div>
         </div>

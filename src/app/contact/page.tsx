@@ -23,10 +23,10 @@ export default function ContactPage() {
 
     emailjs
       .sendForm(
-        "service_0c8hu2u",
-        "template_ojy3xoc",
+        "service_gbu7o7d",
+        "template_28rqmbh",
         form.current,
-        "cGJ5R_Z3F_IMfwldv"
+        "n127MaRmU4OVspAdN"
       )
       .then(() => {
         setStatus("success");
@@ -37,7 +37,8 @@ export default function ContactPage() {
         setShowToast(true);
         setTimeout(() => setShowToast(false), 3000);
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error("EmailJS send failed:", err);
         setStatus("error");
 
         setToastMessage("Oops! Something went wrong.");
@@ -48,8 +49,12 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-white via-gray-50 to-white dark:from-black dark:via-gray-900 dark:to-black py-20 px-6">
-      <div className="max-w-5xl mx-auto">
+    <section className="relative min-h-screen bg-gradient-to-b from-white via-gray-50 to-white dark:from-neutral-950 dark:via-neutral-900 dark:to-neutral-950 py-20 px-6 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none hidden dark:block">
+        <div className="absolute top-20 left-1/4 w-72 h-72 bg-teal-500/10 rounded-full mix-blend-screen filter blur-3xl" />
+        <div className="absolute bottom-20 right-1/4 w-72 h-72 bg-teal-500/10 rounded-full mix-blend-screen filter blur-3xl" />
+      </div>
+      <div className="relative z-10 max-w-5xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +79,7 @@ export default function ContactPage() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <div className="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-md">
+            <div className="bg-white dark:bg-white/5 dark:backdrop-blur-xl p-6 rounded-xl border border-gray-200 dark:border-white/10 shadow-md">
               <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
                 Contact Info
               </h3>
@@ -121,7 +126,7 @@ export default function ContactPage() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="bg-white dark:bg-gray-900 p-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-md space-y-5"
+            className="bg-white dark:bg-white/5 dark:backdrop-blur-xl p-6 rounded-xl border border-gray-200 dark:border-white/10 shadow-md space-y-5"
           >
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -131,7 +136,7 @@ export default function ContactPage() {
                 name="name"
                 id="name"
                 required
-                className="mt-1 w-full px-4 py-2 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="mt-1 w-full px-4 py-2 bg-gray-100 dark:bg-neutral-800 border border-gray-300 dark:border-neutral-800 rounded-md text-gray-900 dark:text-white focus:ring-2 focus:ring-teal-500 focus:outline-none"
               />
             </div>
             <div>
@@ -143,7 +148,7 @@ export default function ContactPage() {
                 id="email"
                 type="email"
                 required
-                className="mt-1 w-full px-4 py-2 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="mt-1 w-full px-4 py-2 bg-gray-100 dark:bg-neutral-800 border border-gray-300 dark:border-neutral-800 rounded-md text-gray-900 dark:text-white focus:ring-2 focus:ring-teal-500 focus:outline-none"
               />
             </div>
             <div>
@@ -155,13 +160,13 @@ export default function ContactPage() {
                 id="message"
                 required
                 rows={5}
-                className="mt-1 w-full px-4 py-2 bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                className="mt-1 w-full px-4 py-2 bg-gray-100 dark:bg-neutral-800 border border-gray-300 dark:border-neutral-800 rounded-md text-gray-900 dark:text-white focus:ring-2 focus:ring-teal-500 focus:outline-none"
               ></textarea>
             </div>
             <button
               type="submit"
               disabled={status === "loading"}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-300"
+              className="w-full bg-teal-500 hover:bg-teal-400 text-black font-semibold py-2 px-6 rounded-lg transition-colors duration-300"
             >
               {status === "loading" ? "Sending..." : "Send Message ✉️"}
             </button>

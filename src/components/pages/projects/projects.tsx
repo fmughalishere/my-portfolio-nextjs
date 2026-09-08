@@ -56,8 +56,12 @@ export default function HomeProjects() {
   }, []);
 
   return (
-    <section className="py-16 bg-white dark:bg-black transition-colors duration-300">
-      <div className="container mx-auto px-6">
+    <section className="relative py-16 bg-white dark:bg-neutral-950 transition-colors duration-300 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none hidden dark:block">
+        <div className="absolute top-0 right-1/4 w-72 h-72 bg-teal-500/10 rounded-full mix-blend-screen filter blur-3xl" />
+        <div className="absolute bottom-0 left-1/4 w-72 h-72 bg-teal-500/10 rounded-full mix-blend-screen filter blur-3xl" />
+      </div>
+      <div className="relative z-10 container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900 dark:text-white">
           Featured Projects
         </h2>
@@ -71,7 +75,7 @@ export default function HomeProjects() {
               key={i}
               whileHover={{ y: -8 }}
               transition={{ duration: 0.3 }}
-              className="rounded-2xl overflow-hidden bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:bg-blue-50 dark:hover:bg-blue-900 hover:border-blue-400 dark:hover:border-blue-600"
+              className="rounded-2xl overflow-hidden bg-white dark:bg-white/5 dark:backdrop-blur-xl border border-gray-200 dark:border-white/10 shadow-md transition-all duration-300 ease-in-out hover:shadow-xl hover:bg-teal-50 dark:hover:bg-white/10 hover:border-teal-400 dark:hover:border-teal-500/50"
             >
               <Image
                 src={project.image}
@@ -91,7 +95,7 @@ export default function HomeProjects() {
                   {project.tech.map((tech, j) => (
                     <span
                       key={j}
-                      className="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-200 rounded-full"
+                      className="text-xs px-2 py-1 bg-teal-100 dark:bg-teal-800 text-teal-700 dark:text-teal-200 rounded-full"
                     >
                       {tech}
                     </span>
@@ -129,7 +133,7 @@ export default function HomeProjects() {
         <div className="mt-10 text-center">
           <Link
             href="/projects"
-            className="inline-block text-blue-600 dark:text-blue-400 font-semibold hover:underline transition"
+            className="inline-block text-teal-600 dark:text-teal-400 font-semibold hover:underline transition"
           >
             View All Projects →
           </Link>

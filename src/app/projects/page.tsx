@@ -63,8 +63,12 @@ export default function ProjectSection() {
 
     return (
         <div>
-            <section className="py-16 bg-white dark:bg-black">
-                <div className="container mx-auto px-6">
+            <section className="relative py-16 bg-white dark:bg-neutral-950 overflow-hidden">
+                <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none hidden dark:block">
+                    <div className="absolute top-0 left-1/4 w-72 h-72 bg-teal-500/10 rounded-full mix-blend-screen filter blur-3xl" />
+                    <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-teal-500/10 rounded-full mix-blend-screen filter blur-3xl" />
+                </div>
+                <div className="relative z-10 container mx-auto px-6">
                     <h1 className="text-3xl md:text-4xl font-bold text-center mb-5 text-gray-900 dark:text-gray-100">
                         Projects
                     </h1>
@@ -78,8 +82,8 @@ export default function ProjectSection() {
                                 key={tech}
                                 onClick={() => setFilter(tech)}
                                 className={`px-4 py-1 text-sm rounded-full border transition duration-300 ${filter === tech
-                                    ? "bg-blue-600 text-white border-blue-600"
-                                    : "border-gray-300 text-gray-600 dark:text-gray-300 hover:border-blue-500"
+                                    ? "bg-teal-500 text-black border-teal-500"
+                                    : "border-gray-300 text-gray-600 dark:text-gray-300 hover:border-teal-500"
                                     }`}
                             >
                                 {tech}
@@ -96,16 +100,18 @@ export default function ProjectSection() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.5, delay: index * 0.2 }}
                                     viewport={{ once: true }}
-                                    className="relative group p-[2px] rounded-2xl bg-gradient-to-br from-blue-500/50 via-purple-500/30 to-pink-500/30 transition duration-300 hover:shadow-[0_0_40px_4px_rgba(99,102,241,0.3)]"
+                                    className="relative group p-[2px] rounded-2xl bg-gradient-to-br from-teal-500/50 via-teal-500/30 to-teal-500/30 transition duration-300 hover:shadow-[0_0_40px_4px_rgba(20,184,166,0.3)]"
                                 >
-                                    <Image
-                                        src={project.image}
-                                        alt={project.title}
-                                        width={800}
-                                        height={400}
-                                        className="w-full h-[300px] object-cover rounded-2xl group-hover:scale-105 transition-transform duration-300"
-                                    />
-                                    <div className="p-6">
+                                    <div className="overflow-hidden rounded-t-2xl">
+                                        <Image
+                                            src={project.image}
+                                            alt={project.title}
+                                            width={800}
+                                            height={400}
+                                            className="w-full h-[300px] object-cover group-hover:scale-105 transition-transform duration-300"
+                                        />
+                                    </div>
+                                    <div className="p-6 bg-white dark:bg-white/5 dark:backdrop-blur-xl rounded-b-2xl">
                                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                                             {project.title}
                                         </h3>
@@ -116,7 +122,7 @@ export default function ProjectSection() {
                                             {project.tech.map((tech, i) => (
                                                 <span
                                                     key={i}
-                                                    className="text-xs px-2 py-1 bg-blue-200 dark:bg-blue-800 text-blue-800 dark:text-blue-100 rounded-full"
+                                                    className="text-xs px-2 py-1 bg-teal-200 dark:bg-teal-800 text-teal-800 dark:text-teal-100 rounded-full"
                                                 >
                                                     {tech}
                                                 </span>
@@ -126,27 +132,27 @@ export default function ProjectSection() {
                                             <Link
                                                 href={project.client}
                                                 target="_blank"
-                                                className="flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                                                className="flex items-center gap-1 text-sm text-teal-600 dark:text-teal-400 hover:underline"
                                             >
                                                 <Github className="w-4 h-4" /> Client
                                             </Link>
                                             {project.server ? <Link
                                                 href={project.server}
                                                 target="_blank"
-                                                className="flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                                                className="flex items-center gap-1 text-sm text-teal-600 dark:text-teal-400 hover:underline"
                                             >
                                                 <Github className="w-4 h-4" /> server
                                             </Link> : null}
                                             <Link
                                                 href={project.demo}
                                                 target="_blank"
-                                                className="ml-auto flex items-center gap-1 text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                                                className="ml-auto flex items-center gap-1 text-sm text-teal-600 dark:text-teal-400 hover:underline"
                                             >
                                                 <ExternalLink className="w-4 h-4" /> Live
                                             </Link>
                                             {/* <Link
                                             href={`/projects/${encodeURIComponent(project.title.toLowerCase().replace(/\s+/g, "-"))}`}
-                                            className="ml-auto text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                                            className="ml-auto text-sm text-teal-600 dark:text-teal-400 hover:underline"
                                         >
                                             Details →
                                         </Link> */}

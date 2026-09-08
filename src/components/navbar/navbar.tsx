@@ -50,7 +50,7 @@ const Navbar = () => {
         <nav
             ref={navRef} // Attach ref to navbar
             className={`fixed top-0 w-full z-50 shadow-md transition-all duration-300 font-gotham
-      ${isScrolled ? "bg-white/70 dark:bg-gray-900/70 backdrop-blur-md" : "bg-white dark:bg-gray-900"}
+      ${isScrolled ? "bg-white/70 dark:bg-neutral-900/70 backdrop-blur-md" : "bg-white dark:bg-neutral-900"}
       `}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,22 +64,22 @@ const Navbar = () => {
                     <div className="hidden md:flex space-x-6">
                         <Link
                             href={`/`}
-                            className="relative group text-gray-900 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300"
+                            className="relative group text-gray-900 dark:text-gray-300 hover:text-teal-500 transition-colors duration-300"
                         >
                             Home
                             <span
-                                className="absolute left-0 bottom-0 h-[2px] w-full bg-blue-500 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+                                className="absolute left-0 bottom-0 h-[2px] w-full bg-teal-500 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
                             />
                         </Link>
                         {navItems.map((item) => (
                             <Link
                                 key={item}
                                 href={`${item.toLowerCase()}`}
-                                className="relative group text-gray-900 dark:text-gray-300 hover:text-blue-500 transition-colors duration-300"
+                                className="relative group text-gray-900 dark:text-gray-300 hover:text-teal-500 transition-colors duration-300"
                             >
                                 {item}
                                 <span
-                                    className="absolute left-0 bottom-0 h-[2px] w-full bg-blue-500 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
+                                    className="absolute left-0 bottom-0 h-[2px] w-full bg-teal-500 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"
                                 />
                             </Link>
                         ))}
@@ -90,16 +90,16 @@ const Navbar = () => {
                         {/* Dark Mode Toggle */}
                         <button
                             onClick={toggleTheme}
-                            className="p-2 rounded-full bg-gray-100 dark:bg-gray-900 hover:scale-110 transition-transform duration-300"
+                            className="p-2 rounded-full bg-gray-100 dark:bg-neutral-900 hover:scale-110 transition-transform duration-300"
                         >
                             {theme === "light" ? (
                                 <MoonIcon className="w-5 h-5 text-gray-800" />
                             ) : (
-                                <SunIcon className="w-5 h-5 text-yellow-400" />
+                                <SunIcon className="w-5 h-5 text-teal-400" />
                             )}
                         </button>
                         <div className="hidden md:flex">
-                            <Link href={`https://drive.google.com/file/d/1f4t-NkvF2uQsHwIKm9RoF6x3tBKdjsyL/view?usp=sharing`} target="_blank">
+                            <Link href={`/files/Fizza-Munir-CV.pdf`} target="_blank" download>
                                 <AnimatedButton text="Download CV" />
                             </Link>
                         </div>
@@ -122,12 +122,12 @@ const Navbar = () => {
                         animate="open"
                         exit="closed" // Ensures closing animation
                         variants={menuVariants}
-                        className="md:hidden bg-white dark:bg-gray-900 backdrop-blur-md absolute w-full left-0 overflow-hidden"
+                        className="md:hidden bg-white dark:bg-neutral-900 backdrop-blur-md absolute w-full left-0 overflow-hidden"
                     >
                         <div className="px-2 pt-2 pb-3 space-y-2">
                             <Link
                                 href={`/`}
-                                className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300"
+                                className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-neutral-800 transition-all duration-300"
                                 onClick={() => setIsOpen(false)}
                             >
                                 Home
@@ -136,7 +136,7 @@ const Navbar = () => {
                                 <Link
                                     key={item}
                                     href={`${item.toLowerCase()}`}
-                                    className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300"
+                                    className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-neutral-800 transition-all duration-300"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {item}
@@ -144,7 +144,7 @@ const Navbar = () => {
                             ))}
                         </div>
                         <div className="block md:hidden mx-5 pb-4">
-                            <Link href={`https://drive.google.com/file/d/1f4t-NkvF2uQsHwIKm9RoF6x3tBKdjsyL/view?usp=sharing`} target="_blank">
+                            <Link href={`/files/Fizza-Munir-CV.pdf`} target="_blank" download>
                                 <AnimatedButton text="Download CV" />
                             </Link>
                         </div>

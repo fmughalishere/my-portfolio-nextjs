@@ -23,7 +23,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       {/* Content is always rendered */}
       <ThemeProvider>
         <Navbar />
-        <div className="w-full bg-slate-100 dark:bg-gray-900">{children}</div>
+        <div className="w-full bg-slate-100 dark:bg-neutral-900">{children}</div>
         <ScrollToggleButton/>
       </ThemeProvider>
 

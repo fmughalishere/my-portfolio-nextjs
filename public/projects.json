@@ -20,6 +20,16 @@
       "server": "https://github.com/fmughalishere"
     },
     {
+      "id": "17",
+      "img": "/images/tlc-med-clinics.jpg",
+      "name": "TLC Med Clinics",
+      "description": "Bilingual (English/Urdu), physician-led healthcare platform for a Lahore clinic offering psychiatry, ketamine therapy, and aesthetic medicine with integrated telemedicine.",
+      "technology": "Next.js, TypeScript, TailwindCSS, Node.js, MongoDB etc.",
+      "liveLink": "https://tlcmedclinics.com/",
+      "client": "https://github.com/fmughalishere",
+      "server": "https://github.com/fmughalishere"
+    },
+    {
       "id": "3",
       "img": "/images/portfolio.jpg",
       "name": "Professional Portfolios",
@@ -81,16 +91,6 @@
       "server": "https://github.com/fmughalishere"
     },
     {
-      "id": "9",
-      "img": "https://i.ibb.co/7jCryNg/Doctors-portal.jpg",
-      "name": "Doctors Portal",
-      "description": "Appointment booking platform for patients and doctors with role access.",
-      "technology": "React, Nodejs, Express, MongoDB, Firebase, JWT etc.",
-      "liveLink": "https://doctors-portalbyfizza.netlify.app/",
-      "client": "https://github.com/fmughalishere",
-      "server": "https://github.com/fmughalishere"
-    },
-    {
       "id": "10",
       "img": "https://i.ibb.co/C7GGYty/Smile-Photography.jpg",
       "name": "Smile Photography",
@@ -136,16 +136,6 @@
       "description": "Car service booking and management site with admin dashboard.",
       "technology": "React, Node.js, Express.Js, MongoDB, TailwindCSS, Firebase etc.",
       "liveLink": "https://geniuscar-servicebyfizza.netlify.app/",
-      "client": "https://github.com/fmughalishere",
-      "server": "https://github.com/fmughalishere"
-    },
-    {
-      "id": "15",
-      "img": "https://i.ibb.co/J3pLhWT/craft-hub-dp.png",
-      "name": "Craft Hub",
-      "description": "Craft marketplace with role-based dashboards for admin, seller, and buyers.",
-      "technology": "React, Nodejs, Express, MongoDB, TailwindCSS, Firebase, JWT etc.",
-      "liveLink": "https://crafthubbyfizza.netlify.app/",
       "client": "https://github.com/fmughalishere",
       "server": "https://github.com/fmughalishere"
     },

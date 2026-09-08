@@ -45,7 +45,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconFileCvFilled className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://drive.google.com/file/d/1f4t-NkvF2uQsHwIKm9RoF6x3tBKdjsyL/view?usp=sharing",
+      href: "/files/Fizza-Munir-CV.pdf",
     },
   ];
   return (

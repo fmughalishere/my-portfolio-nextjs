@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative mt-16 bg-gray-100 dark:bg-gray-900 py-8 transition-colors duration-300">
+    <footer className="relative mt-16 bg-gray-100 dark:bg-neutral-900 py-8 transition-colors duration-300">
       <div className="container mx-auto px-6">
         
 
@@ -23,10 +23,10 @@ export default function Footer() {
           {/* Social Links */}
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="https://github.com/fmughalishere" target="_blank">
-              <Github className="w-6 h-6 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300" />
+              <Github className="w-6 h-6 text-gray-900 dark:text-white hover:text-teal-600 dark:hover:text-teal-400 transition-colors duration-300" />
             </Link>
             <Link href="https://www.linkedin.com/in/fizza-munir-aa054a316/" target="_blank">
-              <Linkedin className="w-6 h-6 text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300" />
+              <Linkedin className="w-6 h-6 text-gray-900 dark:text-white hover:text-teal-600 dark:hover:text-teal-400 transition-colors duration-300" />
             </Link>
             <Link href="mailto:fizamuneer0101@gmail.com">
               <Mail className="w-6 h-6 text-gray-900 dark:text-white hover:text-red-600 dark:hover:text-red-400 transition-colors duration-300" />

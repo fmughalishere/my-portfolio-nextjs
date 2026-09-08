@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 
 export default function ColourfulText({ text }: { text: string }) {
   const colors = [
-    "rgb(0, 191, 255)",   // Deep Sky Blue
+    "rgb(45, 212, 191)",   // Teal (light)
+    "rgb(20, 184, 166)",   // Teal
+    "rgb(13, 148, 136)",   // Teal (deep)
   ];
   
   const [currentColors, setCurrentColors] = React.useState(colors);

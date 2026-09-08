@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Sora } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import Layout from "@/components/layout";
@@ -13,6 +13,18 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const sora = Sora({
+  variable: "--font-sora",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 const Gotham = localFont({
@@ -48,9 +60,10 @@ const Gotham = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Fizza's Portfolio",
-  description: "Fizza's Portfolio",
-  icons: [{ rel: 'icon', url: `/favicon.ico` }],
+  title: "Fizza Munir | Full-Stack & Mobile Developer",
+  description:
+    "Fizza Munir — Freelance Full-Stack (MERN) & Mobile App Developer building scalable web and mobile products for clients across Pakistan, the UAE and the USA.",
+  icons: [{ rel: "icon", url: `/favicon.ico` }],
 };
 
 export default function RootLayout({
@@ -68,11 +81,10 @@ export default function RootLayout({
         </style>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${Gotham.variable} antialiased dark:bg-gray-800 transition-colors duration-300 pt-16 font-gotham`}
+        className={`${geistSans.variable} ${geistMono.variable} ${Gotham.variable} ${inter.variable} ${sora.variable} antialiased dark:bg-neutral-950 transition-colors duration-300 pt-16 font-sans`}
       >
         <Layout>{children}</Layout>
       </body>
     </html>
   );
 }
-
